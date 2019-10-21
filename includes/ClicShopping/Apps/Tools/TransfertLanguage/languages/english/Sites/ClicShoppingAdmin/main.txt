@@ -1,0 +1,99 @@
+heading_title = Transfert language
+module_tl_title = Transfert language
+module_tl_short_title = Transfert language
+
+text_transfert_language = Transfert language
+text_configure =  configure App Module
+
+text_intro = This app allow you to include an server Information form. <br /><br />
+- Click on Configure to access / install or uninstall the app.<br />
+- The App is located in Tools<br />
+
+module_tl_introduction = The install process create the database settings for this module and the access menu
+
+button_back = Back
+button_install_title = Install
+button_configure = Configure
+button_save = Save
+button_dialog_uninstall =  Uninstall
+button_uninstall =  Uninstall
+button_delete = Delete
+button_cancel = Cancel
+button_transfert_language = Transfert language
+button_reset = Reset
+button_analyse = Analyse
+button_update = Update
+button_backup = Sauvegarder
+button_upload = Télécharger
+
+dialog_uninstall_title = Uninstall
+dialog_uninstall_body = Do you want install this App ?
+dialog_uninstall_title = Uninstall Module?
+dialog_uninstall_body = Are you sure you want to uninstall this module?
+
+alert_module_install_success = Module has been successfully installed.
+alert_module_uninstall_success = Module has been successfully uninstalled.
+alert_cfg_saved_success = Configuration parameters have been successfully saved.
+
+table_heading_title = Title
+table_heading_file_date = Date
+table_heading_file_size = Size
+table_heading_action = Action
+
+text_info_heading_new_backup = New Backup
+text_info_heading_restore_local = Restore Local
+text_no_extension = None
+
+table_heading_target = Target <small><i>({{target_language}})</i></small>
+table_heading_source = Source <small><i>({{source_group}})</i></small>
+
+text_info_import = Import source group language definitions into target language.
+text_site_current_version = Current Site version:
+text_info_compare_differencies = Compare preview of target and source language definitions
+text_info_source_language = Source group: <strong>{{file_name}} [ {{source_group}} ]</strong>
+text_info_target_language = Target Language: <strong>{{target_language}}</strong>
+
+text_info_heading_new_backup = New Archive
+text_info_new_backup = Do not interrupt the archive process which might take a couple of seconds.
+text_info_download_only = Download only (do not store server side)
+
+text_info_restore_local_raw_file = The file uploaded must be a raw sql (text) file.
+text_info_best_through_https = Best through a HTTPS connection
+
+text_info_heading_upload_local = Upload language zip archive
+text_info_upload_local = Select a zip archive file to upload.
+
+text_info_sources = Following language source used:
+text_info_modify_definition = Modify Language Definition
+text_info_user_added_only = User Added Value
+text_info_add_new_language_definition = + Add new Language Definition
+text_delete_intro = Are you sure you want to delete this archive?
+text_transfert_directory = Archive Directory:
+
+text_crowdin = Crowdin import
+text_upload = Local import
+
+info_button_clean_target = Delete Target
+info_button_apply_source = Apply Source
+info_button_add_new = Add new
+
+select_installed_language_to_upgrade = Select only one target language
+select_language_site_from_zip_pack_to_upgrade = Select only one source group to import:
+select_language_apps_from_zip_pack_to_upgrade = OR select one from Apps:
+button_import_preview = Import preview
+button_import = Import!
+
+icon_file_archive = Archivation
+icon_file_download = Download
+icon_delete = Delete
+icon_restore = Restore
+
+error_download_link_not_acceptable = Error: Download link not acceptable.
+error_reading_zip_file = Error: Invalid archive file. {{error}}
+error_invalid_language_package = Error: Invalid zip file.
+error_transfert_directory_not_writeable = Error: Transfer directory is not writeable.
+error_incompatible_language_file Error: Archive language file is incompatible.
+
+success_define_language_table_upgrade = Success: {{all_data}} language definitions are upgraded. ( Deleted: {{deleted}}, add as new: {{added}}, modified: {{modified}} )
+success_file_deleted = Success: The file has been removed.
+success_transfert_directory_created = Success: transfer diretory is created.

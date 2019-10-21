@@ -1,0 +1,98 @@
+heading_title = Import / Export langues
+module_tl_title =  Import / Export langues
+module_tl_short_title =  Import / Export langues
+
+text_transfert_language = Import / Export langues
+text_configure =  Configurer App Module
+
+text_intro = Cette app vous permet d'accéder à un fomulaire Import / Export langues<br /><br />
+- Cliquez sur configurer pour accéder à l'installation ou la désinstallation l'app.<br />
+- Cette app est dans le menu Outils<br />
+
+module_tl_introduction = Le processus d'installation crée la base de données et le menu pour ce module
+
+button_install_title = Installer
+button_configure = Configurer
+button_save = Sauver
+button_dialog_uninstall =  Désinstaller
+button_uninstall =  Désinstaller
+button_delete = Supprimer
+button_cancel = Annuler
+button_transfert_language = Import / Export langues
+button_reset = Reset
+button_analyse = Analyser
+button_update = Mettre à jour
+button_backup = Sauvegarder
+button_upload = Télécharger
+
+dialog_uninstall_title = Désinstaller
+dialog_uninstall_body = Souhaitez-vous installer cette App ?
+dialog_uninstall_title = Désinstaller le module?
+dialog_uninstall_body = Etes vous sur de désinstaller ce module?
+
+alert_module_install_success = Le module a été installée.
+alert_module_uninstall_success = Le module a été désinstallée.
+alert_cfg_saved_success = les paramètres de configuration ont été mises à jour.
+
+table_heading_title = Titre
+table_heading_file_date = Date
+table_heading_file_size = Taille
+table_heading_action = Action
+
+text_info_heading_new_backup = Nouvelle sauvegarde
+text_info_heading_restore_local = locale restoration
+text_no_extension = Aucun
+
+table_heading_target = Cible <small><i>({{target_language}})</i></small>
+table_heading_source = Source <small><i>({{source_group}})</i></small>
+
+text_info_import = Importer des définitions de langues dans une langue cible.
+text_site_current_version = Version actuelle du site :
+text_info_compare_differencies = Compare preview of target and source language definitions
+text_info_source_language = Source group: <strong>{{file_name}} [ {{source_group}} ]</strong>
+text_info_target_language = Langue cible : <strong>{{target_language}}</strong>
+
+text_info_heading_new_backup = Nouvelle archive
+text_info_new_backup = Veuillez ne pas interrompre ce processus.
+text_info_download_only = Seulement télécharger (ne sera pas sauvegardé sur le serveur)
+
+text_info_restore_local_raw_file = Le fichier télécharger doir être un  fichiet text raw sql.
+text_info_best_through_https = Meilleure avec une connexion HTTPS
+
+text_info_heading_upload_local = Télécharger vers le serveur l'archive zip
+text_info_upload_local = Sélectionner une archive zip à  envoyer sur le serveur.
+
+text_info_sources = Langues source suivantes utilisées:
+text_info_modify_definition = Modifié la définition d'une langue
+text_info_user_added_only = Ajouter une valeur
+text_info_add_new_language_definition = + Ajouter une nouvelle définition de langue
+text_delete_intro = Etes vous sur de supprimer cette archive ?
+text_transfert_directory = Répertoire de l'archive :
+
+text_crowdin = Importation Crowdin
+text_upload = Importation locale
+
+info_button_clean_target = Supprimer la cible
+info_button_apply_source = Appliquer la source
+info_button_add_new = Ajouter
+
+select_installed_language_to_upgrade = Sélectionner seulement une langue cible
+select_language_site_from_zip_pack_to_upgrade = Sélectionner seulement un group source à importer:
+select_language_apps_from_zip_pack_to_upgrade = Ou sélectionner une des Apps:
+button_import_preview = Prévisualisation import
+button_import = Importer !
+
+icon_file_archive = Archive
+icon_file_download = Télécharger
+icon_delete = Supprimer
+icon_restore = Restaurer
+
+error_download_link_not_acceptable = Erreur: le lien de téléchargement n'est pas acceptable.
+error_reading_zip_file = Erreur: fichier archive invalide. {{error}}
+error_invalid_language_package = Erreur: fichier zip invalide.
+error_transfert_directory_not_writeable = Erreur: Répertoire de transfert n'est pas en mode écriture.
+error_incompatible_language_file = Erreur: l'archive n'est pas compatible.
+
+success_define_language_table_upgrade = Succès: {{all_data}} défintions des langues ont été mises à jour. ( Suppression: {{deleted}}, Ajouter comme nouveau {{added}}, modifié: {{modified}} )
+success_file_deleted = Succès: le fichier a été supprimé.
+success_transfert_directory_created = Succès: le répertoire de transfert a été créé.
