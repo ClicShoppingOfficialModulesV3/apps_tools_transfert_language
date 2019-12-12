@@ -25,7 +25,7 @@
       <div class="card card-block headerCard">
         <div class="row">
           <span
-            class="col-md-1 logoHeading"><?php echo HTML::image($CLICSHOPPING_Template->getImageDirectory() . '/categories/define_language.gif', $CLICSHOPPING_TransfertLanguage->getDef('heading_title'), '40', '40'); ?></span>
+            class="col-md-1 logoHeading"><?php echo HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'categories/define_language.gif', $CLICSHOPPING_TransfertLanguage->getDef('heading_title'), '40', '40'); ?></span>
           <span
             class="col-md-3 pageHeading"><?php echo '&nbsp;' . $CLICSHOPPING_TransfertLanguage->getDef('text_info_heading_upload_local'); ?></span>
           <span class="col-md-8 text-md-right">
