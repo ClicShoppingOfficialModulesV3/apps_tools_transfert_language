@@ -46,7 +46,11 @@
       <div class="col-md-12"><?php echo $CLICSHOPPING_TransfertLanguage->getDef('text_info_upload_local'); ?></div>
       <div class="separator"></div>
       <div class="col-md-12">
-        <?php echo HTML::radioField('download', 'yes', true) . ' ' . $CLICSHOPPING_TransfertLanguage->getDef('text_info_download_only') . '*<br /><br />*' . $CLICSHOPPING_TransfertLanguage->getDef('text_info_best_through_https'); ?>
+        <div class="custom-control custom-radio custom-control-inline">
+          <?php echo HTML::radioField('download', 'yes', true, 'class="custom-control-input" id="download_only" name="download_only"'); ?>
+          <label class="custom-control-label" for="download_only"><?php echo $CLICSHOPPING_TransfertLanguage->getDef('text_info_download_only'); ?></label>
+        </div>
+        <?php echo $CLICSHOPPING_TransfertLanguage->getDef('text_info_best_through_https'); ?>
       </div>
     </div>
   </div>

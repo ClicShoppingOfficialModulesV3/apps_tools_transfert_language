@@ -53,6 +53,7 @@
             class="col-md-3 pageHeading"><?php echo $CLICSHOPPING_TransfertLanguage->getDef('heading_title'); ?></span>
           <span class="col-md-8 text-md-right">
 <?php
+//  echo HTML::button($CLICSHOPPING_TransfertLanguage->getDef('text_crowdin'), null, $CLICSHOPPING_TransfertLanguage->link('TransfertLanguage&DownloadFromCrowdin'), 'primary') . ' ';
   echo HTML::button($CLICSHOPPING_TransfertLanguage->getDef('icon_file_archive'), null, $CLICSHOPPING_TransfertLanguage->link('Backup'), 'info') . ' ';
   echo HTML::button($CLICSHOPPING_TransfertLanguage->getDef('text_upload'), null, $CLICSHOPPING_TransfertLanguage->link('UploadLocal'), 'success') . ' ';
 ?>

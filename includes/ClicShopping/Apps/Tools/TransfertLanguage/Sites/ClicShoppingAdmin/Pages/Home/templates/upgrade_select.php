@@ -108,6 +108,8 @@
 
           $result = $Zip->open($transfert_directory . $file);
 
+          var_dump($result);
+          var_dump('-------------');
           if ($result === true) {
             $info = explode('/', $_POST['groups']);
             var_dump($info);
@@ -121,7 +123,16 @@
 
             var_dump($group);
             $replace = str_replace('/', '-', $group);
+            /*
+                    $Qgdefinitions = $CLICSHOPPING_TransfertLanguage->db->prepare("select distinct content_group
+                                                                                   from :table_languages_definitions
+                                                                                   where languages_id = :languages_id
+                                                                                   and content_group like '" .$replace . "%'
+                                                                                 ");
 
+                    $Qgdefinitions->bindInt(':languages_id', $language_id);
+                    $Qgdefinitions->execute();
+            */
             $Qgdefinitions = $CLICSHOPPING_TransfertLanguage->db->prepare("select distinct content_group
                                                                        from :table_languages_definitions
                                                                        where languages_id = :languages_id
@@ -132,6 +143,7 @@
             $Qgdefinitions->execute();
 
             while ($Qgdefinitions->fetch()) {
+//          $pathname = $info[0] . '/' . $info[1] . '/' . str_replace('-', '/', $QgDefinitions->value('content_group')) . '.json';
               $pathname = $info[1] . '/' . str_replace('-', '/', $Qgdefinitions->value('content_group')) . '.json';
 
               $zip_file_definition_key_array = json_decode($Zip->getFromName($pathname), true);

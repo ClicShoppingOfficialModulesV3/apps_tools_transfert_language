@@ -57,7 +57,7 @@ text_info_new_backup = Veuillez ne pas interrompre ce processus.
 text_info_download_only = Seulement télécharger (ne sera pas sauvegardé sur le serveur)
 
 text_info_restore_local_raw_file = Le fichier télécharger doir être un  fichiet text raw sql.
-text_info_best_through_https = Meilleure avec une connexion HTTPS
+text_info_best_through_https = *Meilleure avec une connexion HTTPS
 
 text_info_heading_upload_local = Télécharger vers le serveur l'archive zip
 text_info_upload_local = Sélectionner une archive zip à  envoyer sur le serveur.

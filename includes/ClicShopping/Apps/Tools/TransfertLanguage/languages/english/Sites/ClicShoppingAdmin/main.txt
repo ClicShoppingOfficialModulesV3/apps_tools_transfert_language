@@ -58,7 +58,7 @@ text_info_new_backup = Do not interrupt the archive process which might take a c
 text_info_download_only = Download only (do not store server side)
 
 text_info_restore_local_raw_file = The file uploaded must be a raw sql (text) file.
-text_info_best_through_https = Best through a HTTPS connection
+text_info_best_through_https = *Best through a HTTPS connection
 
 text_info_heading_upload_local = Upload language zip archive
 text_info_upload_local = Select a zip archive file to upload.
