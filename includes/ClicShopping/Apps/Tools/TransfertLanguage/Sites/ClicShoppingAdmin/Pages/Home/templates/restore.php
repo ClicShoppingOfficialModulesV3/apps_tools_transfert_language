@@ -100,7 +100,6 @@
           $result = $Zip->open($transfert_directory . $file);
 
           if ($result === true) {
-
             $language_pack['Sites'] = [];
             $language_pack['Apps'] = [];
 

@@ -90,7 +90,7 @@
           $target_language = [];
 
           foreach ($languages as $key) {
-            if ($key['id'] == $_POST['site_language']) {
+            if ($key['id'] === $_POST['site_language']) {
               $target_language = $key;
               break;
             }
@@ -134,10 +134,10 @@
                     $Qgdefinitions->execute();
             */
             $Qgdefinitions = $CLICSHOPPING_TransfertLanguage->db->prepare("select distinct content_group
-                                                                       from :table_languages_definitions
-                                                                       where languages_id = :languages_id
-                                                                       and content_group like 'Shop%'
-                                                                     ");
+                                                                           from :table_languages_definitions
+                                                                           where languages_id = :languages_id
+                                                                           and content_group like 'Shop%'
+                                                                         ");
 
             $Qgdefinitions->bindInt(':languages_id', $language_id);
             $Qgdefinitions->execute();
@@ -191,8 +191,8 @@
 
                   foreach ($diff_array_source as $key => $value) {
                     if (!isset($diff_array_user[$key])) {
-                      // save as new
-                      $content_text .= '<tr><td></td><td><strong>' . $key . '</strong><br />' . htmlentities($value);
+// save as new
+                      $content_text .= '<tr><td></td><td><strong>' . $key . '</strong><br />' . htmlentities($value, ENT_QUOTES | ENT_HTML5);
                       $content_text .= '</td><td>' . $CLICSHOPPING_TransfertLanguage->getDef('text_info_add_new_language_definition') . '<br /><button type="button" class="btn btn-success btn-xs">' . $CLICSHOPPING_TransfertLanguage->getDef('info_button_add_new') . '</button>';
                       $sql_array = ['save' => ['table' => ':table_languages_definitions', 'data' => ['content_group' => $QgDefinitions->value('content_group'), 'definition_key' => $key, 'definition_value' => addslashes($diff_array_source[$key]), 'languages_id' => $target_language['id']]]];
                       fwrite($transport_file, json_encode($sql_array, JSON_UNESCAPED_SLASHES) . "\n");
@@ -217,8 +217,6 @@
             echo $content_text;
           }
         ?>
-
-
         </form>
       </div>
       <?php

@@ -17,7 +17,6 @@
 
   class Upload extends \ClicShopping\OM\PagesActionsAbstract
   {
-
     protected $app;
     protected $transfert_directory;
 
@@ -42,7 +41,7 @@
 
         $result = $Zip->open($this->transfert_directory . $zip_package->getFilename());
 
-        if ($zip_package->check() == false || $zip_package->save() == false) {
+        if ($zip_package->check() === false || $zip_package->save() === false) {
           $CLICSHOPPING_MessageStack->add($this->app->getDef('error_reading_zip_file', ['error' => $Zip->message($result)]), 'warning');
         }
 

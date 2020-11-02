@@ -15,9 +15,10 @@
 
   $CLICSHOPPING_TransfertLanguage = Registry::get('TransfertLanguage');
   $CLICSHOPPING_MessageStack = Registry::get('MessageStack');
+  $CLICSHOPPING_Template = Registry::get('TemplateAdmin');
 
-  if ($CLICSHOPPING_MessageStack->exists('TransfertLanguage')) {
-    echo $CLICSHOPPING_MessageStack->get('TransfertLanguage');
+  if ($CLICSHOPPING_MessageStack->exists('main')) {
+    echo $CLICSHOPPING_MessageStack->get('main');
   }
 ?>
 <div class="contentBody">

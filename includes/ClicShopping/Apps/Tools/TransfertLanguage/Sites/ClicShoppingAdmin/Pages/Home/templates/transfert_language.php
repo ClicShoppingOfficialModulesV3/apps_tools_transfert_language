@@ -67,7 +67,7 @@
     if (!FileSystem::isWritable($transfert_directory)) {
       ?>
       <div class="alert alert-danger" role="alert">
-        <p><?php echo $CLICSHOPPING_Upgrade->getDef('error_directory_not_writable'); ?></p>
+        <p><?php echo $CLICSHOPPING_TransfertLanguage->getDef('error_directory_not_writable'); ?></p>
       </div>
       <?php
     }

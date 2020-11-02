@@ -21,8 +21,8 @@
 
   $CLICSHOPPING_TransfertLanguage_Config = Registry::get('TransfertLanguageAdminConfig' . $current_module);
 
-  if ($CLICSHOPPING_MessageStack->exists('TransfertLanguage')) {
-    echo $CLICSHOPPING_MessageStack->get('TransfertLanguage');
+  if ($CLICSHOPPING_MessageStack->exists('main')) {
+    echo $CLICSHOPPING_MessageStack->get('main');
   }
 ?>
 

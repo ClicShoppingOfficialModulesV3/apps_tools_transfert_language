@@ -18,7 +18,6 @@
 
   class UpgadeFromLanguagePack extends \ClicShopping\OM\PagesActionsAbstract
   {
-
     protected $app;
     protected $transfert_directory;
 

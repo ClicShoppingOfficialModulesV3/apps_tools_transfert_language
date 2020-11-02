@@ -19,11 +19,10 @@
 
   class ZipNow extends \ClicShopping\OM\PagesActionsAbstract
   {
-
     protected $app;
-    protected $transfert_directory;
-    protected $current_version;
-    protected $language;
+    protected $lang;
+    protected string $transfert_directory;
+    protected string $current_version;
 
     public function __construct()
     {
@@ -48,7 +47,6 @@
       }
     }
 
-
     public function execute()
     {
       $CLICSHOPPING_MessageStack = Registry::get('MessageStack');
@@ -65,7 +63,8 @@
 
         if ($result === true) {
 
-          $array = ['Shop',
+          $array = [
+            'Shop',
             'ClicShoppingAdmin',
             'Apps'
           ];
@@ -87,7 +86,8 @@
                   $localDir = '';
 
                   foreach ($files as $pathname) {
-                    $relative_path = $languages[$i]['directory'] . '/' . $this->current_version . '/' . $group . '/' . str_replace($dir, '', $pathname);
+//                    $relative_path = $languages[$i]['directory'] . '/' . $this->current_version . '/' . $group . '/' . str_replace($dir, '', $pathname);
+                    $relative_path = $languages[$i]['directory'] . '/' . $group . '/' . str_replace($dir, '', $pathname);
 
                     $path_parts = pathinfo($relative_path);
 
@@ -115,7 +115,8 @@
                     $localDir = '';
                     foreach ($files as $pathname) {
 
-                      $relative_path = $languages[$i]['directory'] . '/' . $this->current_version . '/' . $group . '/' . $key['vendor'] . '/' . $key['app'] . '/' . str_replace($dir, '', $pathname);
+//                      $relative_path = $languages[$i]['directory'] . '/' . $this->current_version . '/' . $group . '/' . $key['vendor'] . '/' . $key['app'] . '/' . str_replace($dir, '', $pathname);
+                      $relative_path = $languages[$i]['directory'] . '/' . $group . '/' . $key['vendor'] . '/' . $key['app'] . '/' . str_replace($dir, '', $pathname);
 
                       $path_parts = pathinfo($relative_path);
 
