@@ -106,10 +106,10 @@
             for ($i = 0; $i < $Zip->numFiles; $i++) {
               $info = explode('/', dirname($Zip->getNameIndex($i)));
 
-              if (isset($info[2]) && $info[2] != 'Apps' && !in_array(($info[0] . '/' . $info[1] . '/' . $info[2]), $language_pack['Sites'])) {
+              if (isset($info[2]) && $info[2] != 'Apps' && !\in_array(($info[0] . '/' . $info[1] . '/' . $info[2]), $language_pack['Sites'])) {
                 $language_pack['Sites'][] = $info[0] . '/' . $info[1] . '/' . $info[2];
               }
-              if ((isset($info[2]) && $info[2] == 'Apps') && isset($info[4]) && !in_array(($info[0] . '/' . $info[1] . '/' . $info[2] . '/' . $info[3] . '/' . $info[4]), $language_pack['Apps'])) {
+              if ((isset($info[2]) && $info[2] == 'Apps') && isset($info[4]) && !\in_array(($info[0] . '/' . $info[1] . '/' . $info[2] . '/' . $info[3] . '/' . $info[4]), $language_pack['Apps'])) {
                 $language_pack['Apps'][] = $info[0] . '/' . $info[1] . '/' . $info[2] . '/' . $info[3] . '/' . $info[4];
               }
             }

@@ -163,7 +163,7 @@
                 $table_language_definitions_array[$Qdefinitions->value('definition_key')] = $Qdefinitions->value('definition_value');
               }
 
-              if (is_array($zip_file_definition_key_array)) {
+              if (\is_array($zip_file_definition_key_array)) {
                 $diff_array_user = array_diff_assoc($table_language_definitions_array, $zip_file_definition_key_array);
                 $diff_array_source = array_diff_assoc($zip_file_definition_key_array, $table_language_definitions_array);
 

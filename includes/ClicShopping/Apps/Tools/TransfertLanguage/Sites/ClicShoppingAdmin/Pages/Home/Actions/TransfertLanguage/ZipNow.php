@@ -71,7 +71,7 @@
 
           $apps = Apps::getAll();
 
-          for ($i = 0, $n = count($languages); $i < $n; $i++) {
+          for ($i = 0, $n = \count($languages); $i < $n; $i++) {
             foreach ($array as $group) {
               if ($group != 'Apps') {
                 if ($group == 'Shop') {

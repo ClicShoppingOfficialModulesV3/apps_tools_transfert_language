@@ -89,13 +89,13 @@
         $contents = [];
 
         while ($file = $dir->read()) {
-          if (!is_dir($transfert_directory . $file) && in_array(substr($file, -3), array('zip'))) {
+          if (!is_dir($transfert_directory . $file) && \in_array(substr($file, -3), array('zip'))) {
             $contents[] = $file;
           }
         }
         sort($contents);
 
-        for ($i = 0, $n = count($contents); $i < $n; $i++) {
+        for ($i = 0, $n = \count($contents); $i < $n; $i++) {
           $entry = $contents[$i];
           ?>
           <tr>

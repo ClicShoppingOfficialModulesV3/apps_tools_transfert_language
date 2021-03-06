@@ -33,7 +33,7 @@
       if (is_writable($this->transfert_directory) && is_dir($this->transfert_directory)) {
         $zip_package = new UploadClass('sql_file', $this->transfert_directory, '777', ['zip']);
 
-        if (is_null($zip_package->getFilename())) return false;
+        if (\is_null($zip_package->getFilename())) return false;
 
         $Zip = new \ZipArchive();
 
