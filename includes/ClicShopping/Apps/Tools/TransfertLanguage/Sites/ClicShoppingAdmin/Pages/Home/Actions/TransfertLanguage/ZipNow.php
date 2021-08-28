@@ -19,8 +19,8 @@
 
   class ZipNow extends \ClicShopping\OM\PagesActionsAbstract
   {
-    protected $app;
-    protected $lang;
+    protected mixed $app;
+    protected mixed $lang;
     protected string $transfert_directory;
     protected string $current_version;
 

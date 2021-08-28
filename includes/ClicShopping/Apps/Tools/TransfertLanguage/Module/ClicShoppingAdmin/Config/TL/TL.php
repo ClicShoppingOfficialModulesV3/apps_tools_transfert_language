@@ -19,7 +19,7 @@
 
     protected $pm_code = 'transfert_language';
 
-    public $is_uninstallable = true;
+    public bool $is_uninstallable = true;
     public $sort_order = 400;
 
     protected function init()
