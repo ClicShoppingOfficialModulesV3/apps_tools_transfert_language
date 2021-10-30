@@ -16,7 +16,7 @@
 
   class Download extends \ClicShopping\OM\PagesActionsAbstract
   {
-    protected $app;
+    protected mixed $app;
     protected $transfert_directory;
 
     public function __construct()
