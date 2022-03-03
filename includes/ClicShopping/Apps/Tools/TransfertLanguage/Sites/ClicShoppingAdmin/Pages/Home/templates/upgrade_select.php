@@ -75,7 +75,7 @@
                   class="col-md-1 logoHeading"><?php echo HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'categories/define_language.gif', $CLICSHOPPING_TransfertLanguage->getDef('heading_title'), '40', '40'); ?></span>
                 <span
                   class="col-md-3 pageHeading"><?php echo $CLICSHOPPING_TransfertLanguage->getDef('heading_title'); ?></span>
-                <span class="col-md-8 text-md-right">
+                <span class="col-md-8 text-end">
 <?php
   echo HTML::button($CLICSHOPPING_TransfertLanguage->getDef('button_import'), null, null, 'success') . ' ';
   echo HTML::button($CLICSHOPPING_TransfertLanguage->getDef('button_cancel'), null, $CLICSHOPPING_TransfertLanguage->link('TransfertLanguages'), 'warning');
@@ -108,8 +108,9 @@
 
           $result = $Zip->open($transfert_directory . $file);
 
-          var_dump($result);
-          var_dump('-------------');
+ //         var_dump($result);
+ //var_dump('-------------');
+
           if ($result === true) {
             $info = explode('/', $_POST['groups']);
             var_dump($info);
@@ -147,7 +148,7 @@
               $pathname = $info[1] . '/' . str_replace('-', '/', $Qgdefinitions->value('content_group')) . '.json';
 
               $zip_file_definition_key_array = json_decode($Zip->getFromName($pathname), true);
-              var_dump($zip_file_definition_key_array);
+//var_dump($zip_file_definition_key_array);
               $Qdefinitions = $CLICSHOPPING_TransfertLanguage->db->prepare('select *
                                                                       from :table_languages_definitions
                                                                       where languages_id = :languages_id

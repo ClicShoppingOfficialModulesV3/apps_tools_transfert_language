@@ -51,7 +51,7 @@
             class="col-md-1 logoHeading"><?php echo HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'categories/define_language.gif', $CLICSHOPPING_TransfertLanguage->getDef('heading_title'), '40', '40'); ?></span>
           <span
             class="col-md-3 pageHeading"><?php echo $CLICSHOPPING_TransfertLanguage->getDef('heading_title'); ?></span>
-          <span class="col-md-8 text-md-right">
+          <span class="col-md-8 text-end">
 <?php
 //  echo HTML::button($CLICSHOPPING_TransfertLanguage->getDef('text_crowdin'), null, $CLICSHOPPING_TransfertLanguage->link('TransfertLanguage&DownloadFromCrowdin'), 'primary') . ' ';
   echo HTML::button($CLICSHOPPING_TransfertLanguage->getDef('icon_file_archive'), null, $CLICSHOPPING_TransfertLanguage->link('Backup'), 'info') . ' ';
@@ -76,9 +76,9 @@
     <thead>
     <tr class="dataTableHeadingRow">
       <th><?php echo $CLICSHOPPING_TransfertLanguage->getDef('table_heading_title'); ?></th>
-      <th class="text-md-right"><?php echo $CLICSHOPPING_TransfertLanguage->getDef('table_heading_file_date'); ?></th>
-      <th class="text-md-right"><?php echo $CLICSHOPPING_TransfertLanguage->getDef('table_heading_file_size'); ?></th>
-      <th class="text-md-right"><?php echo $CLICSHOPPING_TransfertLanguage->getDef('table_heading_action'); ?></th>
+      <th class="text-end"><?php echo $CLICSHOPPING_TransfertLanguage->getDef('table_heading_file_date'); ?></th>
+      <th class="text-end"><?php echo $CLICSHOPPING_TransfertLanguage->getDef('table_heading_file_size'); ?></th>
+      <th class="text-end"><?php echo $CLICSHOPPING_TransfertLanguage->getDef('table_heading_action'); ?></th>
     </tr>
     </thead>
     <tbody>
@@ -101,9 +101,9 @@
           <tr>
             <td><?php echo $entry; ?></td>
             <td
-              class="text-md-right"><?php echo date($CLICSHOPPING_TransfertLanguage->getDef('php_date_time_format'), filemtime($transfert_directory . $entry)); ?></td>
-            <td class="text-md-right"><?php echo number_format(filesize($transfert_directory . $entry)); ?> bytes</td>
-            <td class="text-md-right">
+              class="text-end"><?php echo date($CLICSHOPPING_TransfertLanguage->getDef('php_date_time_format'), filemtime($transfert_directory . $entry)); ?></td>
+            <td class="text-end"><?php echo number_format(filesize($transfert_directory . $entry)); ?> bytes</td>
+            <td class="text-end">
               <?php
                 echo '<a href="' . $CLICSHOPPING_TransfertLanguage->link('TransfertLanguage&Download&file=' . $entry) . '">' . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/file_download.gif', $CLICSHOPPING_TransfertLanguage->getDef('icon_file_download')) . '</a>';
                 echo '&nbsp;';
